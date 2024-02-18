@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer or Prisoner?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are you a Lawyer or a Prisoner?</h1>
+        <button id="lawyerBtn">Lawyer</button>
+        <button id="prisonerBtn">Prisoner</button>
+    </div>
+
+    <script>
+        document.getElementById("lawyerBtn").addEventListener("click", function() {
+            window.location.href = "lawyer.html"; // Redirect to lawyer page
+        });
+
+        document.getElementById("prisonerBtn").addEventListener("click", function() {
+            window.location.href = "signup.html"; // Redirect to prisoner page
+        });
+    </script>
+</body>
+</html>
+
+
