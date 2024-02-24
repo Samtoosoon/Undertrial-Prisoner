@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-style: italic;
+    font-size: large;
+    margin: 15px 30px;
+    padding: 15px;
+}
+#background{
+    background-color: #f2f2f2;
+    border: 2px solid rgb(76, 130, 14);
+    border-radius: 6px;
+    padding: 15px 15px 30px;
+}
+input[type=text],
+input[type=number],
+input[type=password]{
+    border: 1px solid rgb(76, 130, 14);
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+}
+.heading{
+    background-color: rgb(76, 130, 14);
+    border: 2px solid  rgb(76, 130, 14);
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+}
+
+input[type="go"]{
+   color: white;
+   background-color:  rgb(76, 130, 14);
+   border: 1px solid  rgb(76, 130, 14) ;
+   border-radius: 4px;
+   cursor: pointer;
+   padding: 8px;
+   /* text-decoration-line: none; */
+}
+
+ input[type="go"]:hover{
+     background-color: rgb(10, 163, 163);
+ 
+ } 
+
+ fieldset{
+    background-color: #fff;
+    border:1px solid rgb(76, 130, 14);
+    border-radius: 5px;
+}
+
+a {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px; 
+    margin: 10px;
+}
+
+input[type="date"] {
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    width: 200px; 
+  }
