@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel = "stylesheet" href = "syle.css">
+    <link rel = "stylesheet" href = "style.css">
     <title>Login</title>
 </head>
 <body>
     <div class="container">
-        <form class="signin-form">
+        <form id="signin-form">
           <h2>Sign In</h2>
           <div class="form-group">
             <label for="username">Username or Email</label>
@@ -20,17 +20,56 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
           </div>
-          <button onclick="login()" type="submit">LOGIN</button>
+          <button type="button" id="submit" class="sub">Submit</button>
           <p>Don't have an account? <a href="register.html">Register here</a></p>
         </form>
-      </div>
+    </div>
+
+
+<!-- <script src="index2.js"></script> -->
+ <script type="module" >
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"; 
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"; 
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBiIrPpQJpay-02Lm0pzNXHm4zxwCXA2hU",
+    authDomain: "loginsignup-page-541c1.firebaseapp.com",
+    projectId: "loginsignup-page-541c1",
+    storageBucket: "loginsignup-page-541c1.appspot.com",
+    messagingSenderId: "842148234758",
+    appId: "1:842148234758:web:72acfc5167dff0aa86a587",
+    measurementId: "G-EK1HL13TWT"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+function validate_password (password){
+    if(password<6){
+        return false
+    }
+    else {
+         return true 
+    }
+}
+
+document.getElementById("submit").addEventListener('click', function(e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+set(ref(db, 'users/' + username), {
+        username: username,
+        password: password
+    }).then(() => {
+        alert("Login successful!");
+        // Redirect to the profile page
+        window.location.href = "profile_lawyer.html"; // Change to the actual profile page URL
+    }).catch((error) => {
+        console.error("Error adding document: ", error);
+    });
+    });
+</script> 
 
 </body>
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
-<!-- import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"; -->
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"></script>
- <script src="index.js"></script>
 </html>
-
