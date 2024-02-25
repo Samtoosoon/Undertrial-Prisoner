@@ -73,3 +73,48 @@ body {
 
 
    
+
+/* complain form css  */
+#fs-frm {
+  padding-top: 100px;
+  margin-top: 200px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#fs-frm-inputs label,
+#fs-frm-inputs input,
+#fs-frm-inputs textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#fs-frm-inputs input[type="text"],
+#fs-frm-inputs input[type="email"],
+#fs-frm-inputs input[type="tel"],
+#fs-frm-inputs textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#fs-frm-inputs textarea {
+  resize: vertical;
+}
+
+#fs-frm input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#fs-frm input[type="submit"]:hover {
+  background-color: #0056b3;
+}

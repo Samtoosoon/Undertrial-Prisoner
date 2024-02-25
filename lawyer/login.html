@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "syle.css">
     <title>Login</title>
 </head>
 <body>
@@ -64,7 +64,7 @@ set(ref(db, 'users/' + username), {
     }).then(() => {
         alert("Login successful!");
         // Redirect to the profile page
-        window.location.href = "profile_lawyer.html"; // Change to the actual profile page URL
+        window.location.href = "/index.html"; // Change to the actual profile page URL
     }).catch((error) => {
         console.error("Error adding document: ", error);
     });

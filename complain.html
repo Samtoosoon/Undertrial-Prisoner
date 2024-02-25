@@ -1,0 +1,27 @@
+<!--to make a search interface for lawyer hiring website-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+
+<body>
+<form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Full Name</label>
+    <input type="text" name="name" id="full-name" placeholder="Full name" required="">
+    <label for="email-address">CNR NUMBER</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="111-111-111" required="">
+    <label for="telephone">Age</label>
+    <input type="tel" name="telephone" id="telephone" placeholder="xx">
+    <label for="complaint">Complaint</label>
+    <textarea rows="6" name="complaint" id="complaint" placeholder="Enter your complaint here" required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+  </fieldset>
+  <input type="submit" value="File Complaint">
+</form>
+</body>
+
+</html>
