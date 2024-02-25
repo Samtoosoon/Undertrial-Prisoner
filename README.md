@@ -1,1 +1,2 @@
-# Undertrial-Prisoner
+# justice league (Undertrial-Prisoner)
+this website is for under-trial prisoner under act of sdg 16 we come across that under trial prionser is  not able to take help due to not sufficient help provided them so for them we created a website that allow them to search probono lawyer help to contact with which allow them to appear in court freely and also  a chatbot that allow ubder trial priosenr to search government right also corut hearing tracker is provided to help them to see next or previous hearing also their is a xomplaint box is provided for under trila prionser so they can complain to their hire lawyer about the problem also their is chat support provide for under trial priosner and probono lawyer
